@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+section {
+    min-height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section::before{
+    position: absolute;
+    content: "";
+    height: 150px;
+    width: 150px;
+    transform: translate(-150px, -80px);
+    background-color:rgb(82, 45, 117);
+    border-radius: 50%;
+}
+
+section::after{
+    position: absolute;
+    content: "";
+    height: 150px;
+    width: 150px;
+    transform: translate(140px, 80px);
+    background-color:rgb(241, 241, 95);
+    border-radius: 50%;
+}
+
+.container{
+    position: absolute;
+    height: 135px;
+    width: 240px;
+    border: 1px solid white;
+    border-radius: 15px;
+    z-index: 1;
+    box-shadow: 2px 4px 7px rgb(199, 191, 191);
+    backdrop-filter: blur(8px);
+   
+}
+span {
+    color: white;
+    font-size: 13px;
+}
+.container .front img{
+    height: 35px;
+    margin: 5px;
+}
+
+.container .front .chip img{
+    height: 25px;
+    border-radius: 7px;
+    margin: 5px;
+}
+
+.container .front {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.container .front .upper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .front .account span{
+    display: block;
+}
+
