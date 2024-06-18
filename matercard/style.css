@@ -27,14 +27,14 @@ section::after{
     height: 150px;
     width: 150px;
     transform: translate(140px, 80px);
-    background-color:rgb(241, 241, 95);
+    background-color:rgb(163, 163, 159);
     border-radius: 50%;
 }
 
 .container{
     position: absolute;
-    height: 135px;
-    width: 240px;
+    height: 155px;
+    width: 260px;
     border: 1px solid white;
     border-radius: 15px;
     z-index: 1;
@@ -69,7 +69,32 @@ span {
     align-items: center;
 }
 
-.container .front .account span{
+.container .account{
     display: block;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 9px 10px;
+}
+.container .account .acct{
+    padding: 3px;
+}
+.container .account .this {
+    font-size: medium;
+    letter-spacing: 1px;
 }
 
+.container .name .valid{
+    display: flex;
+    flex-direction: column;
+    margin: 2px 19px;
+}
+
+.container .name{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .name .acct{
+    margin: 5px 19px;
+}
