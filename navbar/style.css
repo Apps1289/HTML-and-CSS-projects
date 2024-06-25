@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    position: absolute;
+    background: url("/navbar/backgroud.jpg") center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.container .nav_box {
+    position: fixed;
+    height: 100vh;
+    width: 250px;
+    background-color: rgb(68, 69, 69,0.5);
+    /* backdrop-filter: blur(5px); */
+    /* left: -250px; */
+
+}
+
+.container .nav_box .nav_head a{
+    text-decoration: none;
+    color: aliceblue;
+    margin: 20px 70px;
+    line-height: 25px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+.container .nav_box .nav_head{
+    padding: 20px;
+    border: 2px solid rgba(165, 206, 206, 0.1);
+    border-radius: 7px;
+    transition: all 0.2s linear;
+}
+.container .nav_box .nav_head:hover{
+    /* background-color: rgb(124, 129, 133,0.5); */
+    cursor: pointer;
+}
+
+.container .nav_box .nav_menu ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    font-size:17px;
+}
+.container .nav_box .nav_menu li:hover{
+    background-color: rgb(124, 129, 133,0.5);
+    transition: all 0.5s linear;
+    cursor: pointer;
+    
+    
+}
+
+.container .nav_box .nav_menu ul li {
+    padding: 15px;
+    margin: 5px 5px;
+    border-radius: 7px;
+}
+.container .nav_box .nav_menu ul li i {
+    padding: 5px;
+}
+
+.container .nav_box .social_media i{
+    color: aliceblue;
+}
+
+.container .nav_box .social_media {
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.container .nav_box .social_media i{
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+    
+}
+
+.container .nav_box .social_media i:hover{
+    background-color: rgb(124, 129, 133,0.5);
+    transition: all 0.5s linear;
+}
+
+#check{
+    display: none;
+
+}
+
+.nav_box .btn_one i{
+    color:aliceblue;
+    font-size: 30px;
+    position: fixed;
+    left: 10px;
+    top: 18px;
+    opacity: 1;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.nav_box .btn_one i:hover{
+    background-color: rgb(124, 129, 133,0.5);
+    transition: all 0.5s linear;
+}
+.nav_box .btn_two i{
+    color:aliceblue;
+    font-size: 30px;
+    position: absolute;
+    left: 210px;
+    top: 18px;
+    opacity: -1;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.nav_box .btn_two i:hover{
+    background-color: rgb(124, 129, 133,0.5);
+    transition: all 0.5s linear;
+}
+
+#check:checked ~.nav_box{
+    left:0px;
+}
